@@ -79,8 +79,8 @@ sudo mv wordpress /var/www/html/wordpress
 Change ownership & permission for WordPress:
 
 ```
-sudo chown -R www-data:www-data /var/www/wordpress/
-sudo chmod -R 755 /var/www/wordpress/
+sudo chown -R www-data:www-data /var/www/html/wordpress/
+sudo chmod -R 755 /var/www/html/wordpress/
 ```
 
 ```
@@ -96,7 +96,7 @@ sudo nano /etc/nginx/sites-available/wordpress
 server {
     listen 80;
     listen [::]:80;
-    root /var/www/wordpress;
+    root /var/www/html/wordpress;
     index  index.php index.html index.htm;
 
     autoindex off;
