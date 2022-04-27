@@ -15,6 +15,7 @@ sudo apt install nginx -y
 sudo nano /etc/nginx/nginx.conf 
 ```
 
+Under http {
 ```
 ...
 server_names_hash_bucket_size 125;
